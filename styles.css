@@ -1,25 +1,127 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-h1 {
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     color: #333;
 }
 
-nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 2.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav a:hover {
-    background-color: #0056b3;
+/* Simulation Interface Section */
+#memory-interface {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#memory-interface h2 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Input Group Styles */
+#memory-interface div {
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input {
+    padding: 12px 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: calc(100% - 25px);
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #4facfe;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 25px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Output Section */
+#output {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    color: #222;
+}
+
+/* Background Design */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
 }
